@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Comment Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Moonflower's coffee</h1></header>
+    <main>
+        <h2>Newsletter</h2>
+        <p>Register for our weekly or monthly newsletter by submitting the following form.</p>
+        <h3>Newsletter Subscription</h3>
+        <p>Required fields are marked with an asterisk *</p>
+        <fieldset>
+            <legend>Frequency:</legend>
+            <input type="radio" name="frequency" id="weekly" checked="checked" value="Weekly"> Weekly
+            <input type="radio" name="frequency" id="monthly" value="Monthly"> Monthly
+            <input type="radio" name="frequency" id="specials" value="Special's Only"> Special's Only
+        </fieldset>
+        <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+            <label for="fName">*First Name: </label>
+            <input type="text" name="fName" id="fName" size="35" required="required" placeholder="your first name">
+            <label for="lName">*Last Name: </label>
+            <input type="text" name="lName" id="lName" size="35" required="required" placeholder="your last name">
+            <label for="email">*E-mail: </label>
+            <input type="email" name="email" id="email" size="35" required="required" placeholder="you@yourdomain.com">
+            <label for="comments">Comments: </label>
+            <textarea name="comments" id="comments" rows="5" cols="34" placeholder="your comments here"></textarea>
+            <input type="submit" value="submit">
+        </form>
+    </main>
+    <footer>Copyright&copy; 2016 Moonflower's Coffee
+        <br> Contact us at: <a href="mailto:support@moonflowerscoffee.com">support@moonflowerscoffe.com</a>
+    </footer>
+</body>
+
+</html>
